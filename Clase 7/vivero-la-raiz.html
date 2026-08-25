@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivero La Raíz</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- TODO: enlaza aquí tu funciones.js con el atributo defer -->
 </head>
 <body>
-    
+  <h1>Vivero La Raíz</h1>
+  <p class="sub">Pedidos a domicilio</p>
+
+  <form id="form-pedido">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required>
+
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" required>
+
+    <label for="tipo-planta">Tipo de planta</label>
+    <select id="tipo-planta" required>
+      <option value="">Selecciona una opción</option>
+      <option>Suculenta</option>
+      <option>Helecho</option>
+      <option>Cactus</option>
+    </select>
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" required>
+
+    <label for="mensaje">Mensaje (opcional)</label>
+    <textarea id="mensaje" rows="2"></textarea>
+
+    <button type="submit">Enviar pedido</button>
+    <p id="mensaje-confirmacion"></p>
+  </form>
 </body>
-</html>
+</html> 
